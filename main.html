@@ -6,7 +6,12 @@
 	<link rel="stylesheet" href="styles.css">
 	<style>
 		h1{text-align:center;}
-		.player_two{text-align:center;}
+		.player_two{text-align:center;
+				   background-color:rgb(255,255,255);
+                   background-position: ;
+                }
+         body{background-color: #cccccc;}          
+         h2{text-align: center;}
 	</style>
 </head>
 
@@ -16,19 +21,23 @@
 </script>
 	<div class="player_one">
 		<h1>My Playlist</h1>
-		<a style="text-decoration:none;"href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a>
-		<br>
-		<a style="text-decoration:none;"href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a><br>
-		<a style="text-decoration:none;"href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a><br>
-		<a style="text-decoration:none;"href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a><br>
-		<a style="text-decoration:none;"href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a>
+		<ul style="list-style-type:none;background-color:white;">
+			<li><a style="text-decoration:none;"href="https://www.youtube.com/watch?v=kd-6aw99DpA" target="_blank">Song 1</a></li>
+			<li><a style="text-decoration:none;"href="https://www.youtube.com/watch?v=9iIX4PBplAY" target="_blank">Song 2</a></li>
+			<li><a style="text-decoration:none;"href="https://www.youtube.com/watch?v=IjBAgWKW12Y" target="_blank">Song 3</a></li>
+			<li><a style="text-decoration:none;"href="https://www.youtube.com/watch?v=puKD3nkB1h4" target="_blank">Song 4</a></li>
+			<li><a style="text-decoration:none;"href="https://www.youtube.com/watch?v=6MgsHSAcI9k" target="_blank">Song 5</a></li>
+		</ul>
 	</div>
-	
+	<h2>Now Playing...</h2>
 	<div class="player_two">
-		<h3>Now Playing...</h3>
-		<video src="https://www.w3schools.com/tags/movie.mp4" controls></video>
-		<h3>MP3 songs</h3>
-		<audio src="https://www.pagalworld.com.se/files/download/id/64630" controls></audio>
+		<video controls>
+			<source src="https://www.w3schools.com/tags/movie.mp4">
+		</video>
+		<h2 style="background-color:rgb(255,255,255)">MP3 songs</h2>
+		<audio controls>
+			<source src="https://www.pagalworld.com.se/files/download/id/64630">
+		</audio>
 	</div>
 </body>
 
